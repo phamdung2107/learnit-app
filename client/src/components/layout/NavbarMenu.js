@@ -1,11 +1,11 @@
+import { useContext } from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import learnItLogo from '../../assets/logo.svg'
-import logoutIcon from '../../assets/logout.svg'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
+import learnItLogo from '../../assets/logo.svg'
+import logoutIcon from '../../assets/logout.svg'
 import { AuthContext } from '../../contexts/AuthContext'
-import { useContext } from 'react'
 
 const NavbarMenu = () => {
 	const {
@@ -18,7 +18,7 @@ const NavbarMenu = () => {
 	const logout = () => logoutUser()
 
 	return (
-		<Navbar expand='lg' bg='primary' variant='dark' className='shadow'>
+		<Navbar expand="lg" bg='primary' variant='dark' className='shadow'>
 			<Navbar.Brand className='font-weight-bolder text-white'>
 				<img
 					src={learnItLogo}
@@ -33,7 +33,7 @@ const NavbarMenu = () => {
 			<Navbar.Toggle aria-controls='basic-navbar-nav' />
 
 			<Navbar.Collapse id='basic-navbar-nav'>
-				<Nav className='mr-auto'>
+				<Nav className='me-auto'>
 					<Nav.Link
 						className='font-weight-bolder text-white'
 						to='/dashboard'
